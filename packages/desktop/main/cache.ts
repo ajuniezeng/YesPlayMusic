@@ -278,7 +278,7 @@ class Cache {
     }
   }
 
-  async setAudio(buffer: Buffer, { id, url }: { id: number; url: string }) {
+  async setAudio(buffer: Buffer, { id, url, bitrate }: { id: number; url: string, bitrate: number }) {
     const path = `${app.getPath('userData')}/audio_cache`
 
     try {
